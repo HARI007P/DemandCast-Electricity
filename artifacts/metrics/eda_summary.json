@@ -1,0 +1,45 @@
+{
+  "dataset_name": "Indian National Electricity Demand, Solar and Wind Dataset",
+  "source": "Grid-India / Mendeley Data (y58jknpgs8)",
+  "period": {
+    "start": "2024-01-01 00:00:00",
+    "end": "2025-06-24 23:00:00",
+    "total_hours": 12984,
+    "total_days": 541.0
+  },
+  "demand_mw": {
+    "mean": 194009.9852957486,
+    "std": 20227.713343505737,
+    "min": 97065.28,
+    "p25": 183704.85749999998,
+    "median": 196988.745,
+    "p75": 208060.5275,
+    "max": 248688.24
+  },
+  "solar_mw": {
+    "mean": 15624.212649414663,
+    "max": 64701.19,
+    "peak_hour": 12
+  },
+  "wind_mw": {
+    "mean": 8894.013296364756,
+    "max": 29304.95
+  },
+  "diurnal_peaks": {
+    "peak_hour": 10,
+    "peak_demand_avg": 210549.333012939,
+    "trough_hour": 3,
+    "trough_demand_avg": 172852.82121996302
+  },
+  "weekday_vs_weekend": {
+    "weekday_avg": 195293.18521748495,
+    "weekend_avg": 190785.3205573593,
+    "weekend_drop_mw": 4507.864660125662,
+    "weekend_drop_percent": 2.3082549732114592
+  },
+  "correlations": {
+    "demand_vs_solar": 0.4698063597601738,
+    "demand_vs_wind": 0.14128624060542527,
+    "demand_vs_total_gen": 0.986138286109358
+  }
+}
