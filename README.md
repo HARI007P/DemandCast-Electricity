@@ -256,30 +256,6 @@ $$R^2 = 1 - \frac{\sum_{i=1}^n (y_i - \hat{y}_i)^2}{\sum_{i=1}^n (y_i - \bar{y})
 
 ---
 
-## 9. Citation & Credits
-
-If you use DemandCast in academic research or industrial projects, please cite:
-
-```bibtex
-@misc{demandcast2025,
-  title={DemandCast: LSTM-Based Electricity Consumption Forecasting for the Indian National Grid},
-  author={DemandCast Open Research Team},
-  year={2026},
-  publisher={GitHub},
-  howpublished={\url{https://github.com/your-username/DemandCast}}
-}
-
-@data{mukherjee2025mendeley,
-  author = {Mukherjee, Debanjan and Kalita, Karuna and Kumar, Subhash},
-  title = {Electricity Demand, Solar and Wind Generation Data (September 2021- June 2025) of India at 1-hour interval},
-  publisher = {Mendeley Data},
-  version = {2},
-  year = {2025},
-  doi = {10.17632/y58jknpgs8.2}
-}
-```
-
----
-
-## 10. License
+   
+## 9. License
 This project is licensed under the MIT License. See `LICENSE` for details.
