@@ -11,11 +11,13 @@ import os
 import sys
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
-os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 os.environ["MPLCONFIGDIR"] = os.path.join(BASE_DIR, "artifacts", ".mpl_cache")
+
+# Crucial for Windows: import TensorFlow first to initialize OpenMP / runtime DLLs before NumPy/Pandas
+import tensorflow as tf
 
 import json
 import joblib
@@ -27,7 +29,6 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-import tensorflow as tf
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("DemandCast.API")

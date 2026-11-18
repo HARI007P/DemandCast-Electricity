@@ -103,7 +103,7 @@ The dataset was curated by Debanjan Mukherjee, Karuna Kalita, and Subhash Kumar 
 
 ### Step 1: Clone Repository & Setup Virtual Environment
 ```bash
-git clone https://github.com/your-username/DemandCast.git
+
 cd DemandCast
 
 # Create virtual environment
@@ -193,6 +193,7 @@ python run_project.py --server --port 8000
 1. **Start Backend:**
    ```bash
    uvicorn api.main:app --host 127.0.0.1 --port 8000 --reload
+        
    ```
 2. **Start Frontend:**
    ```bash
